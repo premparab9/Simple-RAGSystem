@@ -1,8 +1,34 @@
-﻿# RAG System (FastAPI)
+# 🚀 RAG System using FastAPI
 
-A simple Retrieval-Augmented Generation (RAG) backend that allows users to upload a PDF and ask questions based on its content using a company-hosted LLM (OpenAI-compatible API).
+A complete **Retrieval-Augmented Generation (RAG)** system that allows users to upload PDF documents and ask questions based on their content using a custom LLM API.
 
 ---
+
+## 📌 Features
+
+- 📄 Upload PDF documents via API
+- 🔍 Extract and split document content
+- 🧠 Store embeddings using FAISS
+- 🤖 Query documents using LLM (company-hosted OpenAI-compatible API)
+- ⚡ FastAPI backend with interactive Swagger UI
+- 🔐 Secure API key handling using `.env`
+
+---
+
+## 🏗️ Project Structure
+RAG-SYSTEM/
+│── app/
+│ ├── main.py
+│ ├── ingestion.py
+│ ├── embedding.py
+│ ├── database.py
+│ ├── retrieval.py
+│ ├── generator.py
+│
+│── data/ # Uploaded PDFs (ignored in git)
+│── .env # API keys (ignored in git)
+│── requirements.txt
+│── README.md
 
 ## Setup
 
